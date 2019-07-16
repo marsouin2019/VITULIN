@@ -1,0 +1,116 @@
+body{
+    color: darkgoldenrod;
+    font-size: 18px;
+    width: 980px;
+    margin:auto auto;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: blue;
+
+}
+
+p{
+    font-size: 18px;
+    color:#000;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.search{
+    width: 750px;
+    height: 250px;
+    text-align: center;
+}
+
+.compte img{
+    width: 50px;
+    height: 50px;
+} 
+
+header{
+    width: 950px;
+    height: 100px;
+    display: flex;
+}
+
+nav>ul{
+    display: flex;
+    list-style: none;
+    width: 980px;
+}
+
+nav>ul>li{
+    width: 196px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+article{
+    /*position: relative;
+    float: left;
+    padding-right: 5px;*/
+    display: flex;
+    margin-bottom: 5px;
+
+}
+
+article:last-child{
+    flex-direction: column;
+}
+
+article:last-child > ul{
+    position: absolute;
+    margin-left: 300px;
+}
+article:last-child > ul >li{
+    padding: 25px;
+}
+
+article > img{
+    width: 107%;
+    
+    
+}
+article:last-child > img{
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+main{
+    padding: 20px;
+}
+
+footer{
+    width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > nav{
+    width: 490px; 
+    height: 200px;
+    flex-direction: column;
+    background-color: #000;
+
+}
+
+footer > address{
+    width: 490px;
+    height: 200px;
+    background-color: blue;
+      
+}
