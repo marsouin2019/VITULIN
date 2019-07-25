@@ -1,0 +1,37 @@
+body{
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-size: 8em;
+    color: navy;
+}
+
+.premier{
+    color:navy;
+}
+
+#deuxieme{
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.hr{
+    padding: 25px 0 25px 0;
+}
+span{
+    text-align: right;
+}
+
+#first{
+    text-align: right;
+    padding: 0 0 0 0;
+}
+#second{
+    text-align: left;
+    padding: 0 0 0 0;
+}

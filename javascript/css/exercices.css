@@ -1,0 +1,25 @@
+body{
+    font-size: 20px;
+    color: #fff;
+}
+
+ul{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.dweb{
+    font-size: 14px;
+    color: #DCDCAD;
+    width: 60px;
+    height: 250px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
