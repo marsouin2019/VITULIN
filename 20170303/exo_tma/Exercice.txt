@@ -1,0 +1,6 @@
+Exercice TMA (Tièrce Maintenance Applicative)
+
+Débuguer le code php contenu dans l'archive. Tout doit être fonctionnel.
+
+Il est également nécessaire de créer une base de donnnées nommée "exo_tma" contenant une table "users": 
+- firstname, lastname, email, password

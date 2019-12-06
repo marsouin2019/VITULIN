@@ -1,0 +1,36 @@
+.icons > li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+.container-fluid{
+    /*background-color: #000;*/
+    max-width: 100%;
+}
+
+.btn{
+padding: .50rem 1.14rem;
+margin: 0rem;
+}
+.logo{
+margin-left: 22%;
+}
+
+
+.navbar-nav li:hover > ul.dropdown-menu {
+display: block;
+}
+.dropdown-submenu {
+position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+top: 0;
+left: 100%;
+margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+text-decoration: underline;
+transform: rotate(-90deg);
+} 
