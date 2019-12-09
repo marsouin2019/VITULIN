@@ -1,0 +1,99 @@
+/*NavBar  */
+.logo{
+margin-left: 20%;
+}
+
+
+.default-color {
+    background-color:  #676665
+    !important;
+}
+
+nav.mb-1{
+    background-color:     #d6d6d6;
+}
+
+.active > a:nth-child(1){ 
+    background-color: red !important;
+    border-radius: 50% 20% / 10% 40%;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #202020;
+}
+
+.navbar-dark .navbar-brand {
+    color:  #0958d1
+;
+}
+
+li.dropdown:nth-child(1) > a:nth-child(1){
+    color: white;
+}
+
+
+.nav > li:nth-child(2) > a:nth-child(1){
+    color: white;
+}
+
+.nav > li:nth-child(3) > a:nth-child(1){
+    color: red;
+}
+
+.nav > li:nth-child(4) > a:nth-child(1){
+    color: white;
+}
+
+
+/*article */
+
+
+.link-black a {
+    color: black;
+}
+  
+.link-black a:hover {
+    color: #0056b3;
+}
+  
+.link-black .active {
+    color: #0056b3;
+}
+  
+.divider-small {
+    width: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    height: 3px;
+}
+
+.pages{
+  margin-left:45%;
+}
+
+/* apropos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer  */
+
+.footer{
+    background-color:    #f2f4f4;
+  }
+  
+  /* Barre réseau sociaux & paiement */
+  .col-12 > div:nth-child(1){
+    background-color: #e5e8e8 ;
+  }
+
+
+ 

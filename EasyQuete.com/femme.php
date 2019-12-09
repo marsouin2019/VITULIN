@@ -1,22 +1,14 @@
- <!--header-->
- <?php
-                                                                    include("includes/header.php")
-                                                                                ?>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!--Footer-->
 
+  
+  <!--article-->
   <?php
-                                                                           include("includes/footer.php")
-                                                                                      ?> 
+  include("article.php")
+  ?>
+  
+  
+  
+  
+  
+  
+  
+ 

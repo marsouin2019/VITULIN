@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="mdb.css">
-    <link rel="stylesheet" href="bootstrap.css">
-  </head>
-  <body>
 
  <!--header-->
  <?php
@@ -19,15 +6,16 @@
 
 
 
-    
-  <div class="container my-5 py-5 z-depth-1">
+<!--Détail produit-->
+
+<div class="container my-5 py-5 z-depth-1">
 
 
   <!--Section: Content-->
   <section class="text-center">
 
     <!-- Section heading -->
-    <h3 class="font-weight-bold mb-5">Product Details</h3>
+    <h3 class="font-weight-bold mb-5">Détails produits</h3>
 
     <div class="row">
 
@@ -77,11 +65,11 @@
         <span class="badge badge-danger product mb-4 ml-xl-0 ml-4">bestseller</span>
         <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
           <span class="red-text font-weight-bold">
-            <strong>$49</strong>
+            <strong>49€</strong>
           </span>
           <span class="grey-text">
             <small>
-              <s>$89</s>
+              <s>€</s>
             </small>
           </span>
         </h3>
@@ -98,7 +86,7 @@
                 aria-controls="collapseOne1">
                 <h5 class="mb-0">
                   Description
-                  <i class="fas fa-angle-down rotate-icon"></i>
+                  
                 </h5>
               </a>
             </div>
@@ -125,8 +113,8 @@
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
                 <h5 class="mb-0">
-                  Details
-                  <i class="fas fa-angle-down rotate-icon"></i>
+                  Détails
+                  
                 </h5>
               </a>
             </div>
@@ -153,8 +141,8 @@
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
                 <h5 class="mb-0">
-                  Shipping
-                  <i class="fas fa-angle-down rotate-icon"></i>
+                  Magasin
+                  
                 </h5>
               </a>
             </div>
@@ -179,7 +167,8 @@
         <!-- Add to Cart -->
         <section class="color">
           <div class="mt-5">
-            <p class="grey-text">Choose your color</p>
+            <p class="grey-text">Couleur</p>
+            
             <div class="row text-center text-md-left">
 
               <div class="col-md-4 col-12">
@@ -207,8 +196,7 @@
 
             <div class="row mt-3">
               <div class="col-md-12 text-center text-md-left text-md-right">
-                <button class="btn btn-primary btn-rounded">
-                  <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> Ajouter au panier</button>
+                <a href="panier.php"><button class="btn btn-primary btn-rounded">Ajouter au panier</button></a>
               </div>
             </div>
           </div>
@@ -231,14 +219,7 @@
                                                                            include("includes/footer.php")
                                                                                       ?> 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    
-    <script src="js/produit.js" ></script>
+    
 
-
-
-</body>
-
-</html>
 

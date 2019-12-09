@@ -3,29 +3,8 @@
   
   
   
+    <!--article-->
+    <?php
+  include("article.php")
+  ?>
   
-  
-  
-  
-   <!--header-->
-   <?php
-                                                                    include("includes/header.php")
-                                                                                ?>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!--Footer-->
-
-  <?php
-                                                                           include("includes/footer.php")
-                                                                                      ?> 

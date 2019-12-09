@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mdb.css">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<title>EasyQuete</title>
-  </head>
-  <body>
-    
                                                                            <!--header-->
                                                                            <?php
                                                                     include("includes/header.php")
@@ -46,8 +31,8 @@
         <div class="card card-cascade wider card-ecommerce">
           <!-- Card image -->
           <div class="view view-cascade overlay">
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (55).jpg" class="card-img-top"
-              alt="sample photo">
+          <a href="reservation.php"> <img src="img/paniertotal.png" class="card-img-top"alt="sample photo"></a>
+              
             <a>
               <div class="mask rgba-white-slight"></div>
             </a>
@@ -58,7 +43,7 @@
             <!-- Title -->
             <h5 class="card-title">
               <strong>
-                <a href="">Réservation</a>
+                <a href="reservation.php">Réservation</a>
               </strong>
             </h5>
             <!-- Description -->
@@ -88,7 +73,7 @@
         <div class="card card-cascade wider card-ecommerce">
           <!-- Card image -->
           <div class="view view-cascade overlay">
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(49).jpg" class="card-img-top"
+            <img src="img/paniertotal.png" class="card-img-top"
               alt="sample photo">
             <a>
               <div class="mask rgba-white-slight"></div>
@@ -100,7 +85,7 @@
             <!-- Title -->
             <h5 class="card-title">
               <strong>
-                <a href="">Réservation</a>
+                <a href="reservation.php">Réservation</a>
               </strong>
             </h5>
             <!-- Description -->
@@ -131,7 +116,7 @@
         <div class="card card-cascade wider card-ecommerce">
           <!-- Card image -->
           <div class="view view-cascade overlay">
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (56).jpg" class="card-img-top"
+            <img src="img/paniertotal.png" class="card-img-top"
               alt="sample photo">
             <a>
               <div class="mask rgba-white-slight"></div>
@@ -143,7 +128,7 @@
             <!-- Title -->
             <h5 class="card-title">
               <strong>
-                <a href="">Réservation</a>
+                <a href="reservation.php">Réservation</a>
               </strong>
             </h5>
             <!-- Description -->
@@ -186,5 +171,3 @@
 
 
 <script source="total_panier.js"></script>
-</body>
-</html>

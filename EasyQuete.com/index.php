@@ -1,22 +1,7 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    
-    <title>EasyQuete</title>
-  </head>
-  <body>
-
 
                                                                             <!--header-->
                                                                                <?php
+                                                                               session_start();
                                                                     include("includes/header.php")
                                                                                 ?>
 
@@ -42,7 +27,7 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <a href="produit.php"><img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid"
+                <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
                   alt=""></a>
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -54,7 +39,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="produit.php" class="dark-grey-text">iPhone 5</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -80,11 +65,11 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>799$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
+                        
                       </a>
                     </span>
                   </div>
@@ -101,7 +86,7 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
+                <img src="img/articlevide.jpg" class="img-fluid"
                   alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -113,7 +98,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="produit.php" class="dark-grey-text">Sony TV-675i</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -139,7 +124,7 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>1039$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -160,7 +145,7 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-              <a href="produit.php"><img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
+              <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
                   alt=""></a>
                 <a>
                   
@@ -173,7 +158,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="produit.php" class="dark-grey-text">iPhone</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -199,7 +184,7 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>2599$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -220,7 +205,7 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-              <a href="produit.php"> <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid"
+              <a href="produit.php"> <img src="img/articlevide.jpg" class="img-fluid"
                   alt=""></a>
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -232,7 +217,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="produit.php" class="dark-grey-text">iPad Pro</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -260,11 +245,11 @@
                   <div class="row mb-0">
                     <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
                       <span class="red-text">
-                        <strong>$99</strong>
+                        <strong>€</strong>
                       </span>
                       <span class="grey-text">
                         <small>
-                          <s>$120</s>
+                          <s>€</s>
                         </small>
                       </span>
                     </h5>
@@ -301,7 +286,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -313,7 +298,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Asus CT-567</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -339,7 +324,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -360,7 +345,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -372,7 +357,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Headphones</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -398,7 +383,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -419,7 +404,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -431,7 +416,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">iPad PRO</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -459,11 +444,11 @@
                       <div class="row mb-0">
                         <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
                           <span class="red-text">
-                            <strong>$699</strong>
+                            <strong>€</strong>
                           </span>
                           <span class="grey-text">
                             <small>
-                              <s>$920</s>
+                              <s>€</s>
                             </small>
                           </span>
                         </h5>
@@ -486,7 +471,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -498,7 +483,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Dell V-964i</a>
+                        <a href="" class="dark-grey-text"> Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -524,7 +509,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -550,530 +535,542 @@
     
     </div>
     
-    <!--Vetement Femmes-->
 
+
+    <!--Vetement Femmes-->
     <div class="container my-5">
 
-      <!-- Section: Block Content -->
-      <section>
-    
-        <h3 class="font-weight-bold text-center dark-grey-text mb-5">Vêtements Femmes</h3>
-    
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <!-- Card -->
-            <div class="card card-ecommerce">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!-- Card image -->
-              <!-- Card content -->
-              <div class="card-body">
-                <!-- Category & Title -->
-                <h5 class="card-title mb-1">
-                  <strong>
-                    <a href="" class="dark-grey-text">iPhone 5</a>
-                  </strong>
-                </h5>
-                <span class="badge badge-danger mb-2">bestseller</span>
-                <!-- Rating -->
-                <ul class="rating">
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                </ul>
-                <!-- Card footer -->
-                <div class="card-footer pb-0">
-                  <div class="row mb-0">
-                    <span class="float-left">
-                      <strong>799$</strong>
-                    </span>
-                    <span class="float-right">
-                      <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Card content -->
-            </div>
-            <!-- Card -->
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <!-- Card -->
-            <div class="card card-ecommerce">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!-- Card image -->
-              <!-- Card content -->
-              <div class="card-body">
-                <!-- Category & Title -->
-                <h5 class="card-title mb-1">
-                  <strong>
-                    <a href="" class="dark-grey-text">Sony TV-675i</a>
-                  </strong>
-                </h5>
-                <span class="badge badge-danger mb-2">bestseller</span>
-                <!-- Rating -->
-                <ul class="rating">
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                </ul>
-                <!-- Card footer -->
-                <div class="card-footer pb-0">
-                  <div class="row mb-0">
-                    <span class="float-left">
-                      <strong>1039$</strong>
-                    </span>
-                    <span class="float-right">
-                      <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Card content -->
-            </div>
-            <!-- Card -->
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <!-- Card -->
-            <div class="card card-ecommerce">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!-- Card image -->
-              <!-- Card content -->
-              <div class="card-body">
-                <!-- Category & Title -->
-                <h5 class="card-title mb-1">
-                  <strong>
-                    <a href="" class="dark-grey-text">iPhone</a>
-                  </strong>
-                </h5>
-                <span class="badge badge-danger mb-2">bestseller</span>
-                <!-- Rating -->
-                <ul class="rating">
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                </ul>
-                <!-- Card footer -->
-                <div class="card-footer pb-0">
-                  <div class="row mb-0">
-                    <span class="float-left">
-                      <strong>2599$</strong>
-                    </span>
-                    <span class="float-right">
-                      <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Card content -->
-            </div>
-            <!-- Card -->
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <!-- Card -->
-            <div class="card card-ecommerce">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!-- Card image -->
-              <!-- Card content -->
-              <div class="card-body">
-                <!-- Category & Title -->
-                <h5 class="card-title mb-1">
-                  <strong>
-                    <a href="" class="dark-grey-text">iPad Pro</a>
-                  </strong>
-                </h5>
-                <span class="badge badge-danger mb-2">bestseller</span>
-                <span class="badge badge-success mb-2 ml-2">SALE</span>
-                <!-- Rating -->
-                <ul class="rating">
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star blue-text"></i>
-                  </li>
-                  <li>
-                    <i class="fas fa-star grey-text"></i>
-                  </li>
-                </ul>
-                <!-- Card footer -->
-                <div class="card-footer pb-0">
-                  <div class="row mb-0">
-                    <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
-                      <span class="red-text">
-                        <strong>$99</strong>
-                      </span>
-                      <span class="grey-text">
-                        <small>
-                          <s>$120</s>
-                        </small>
-                      </span>
-                    </h5>
-                    <span class="float-right">
-                      <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Card content -->
-            </div>
-            <!-- Card -->
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-    
-        <!-- Grid row -->
-        <div class="row flex-center">
-          <p>
-            <a class="btn btn-primary btn-rounded mb-5" data-toggle="collapse" href="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Voir tout
-            </a>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <!-- Grid row -->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                <!-- Card -->
-                <div class="card card-ecommerce">
-                  <!-- Card image -->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" class="img-fluid"
-                      alt="">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card image -->
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Category & Title -->
-                    <h5 class="card-title mb-1">
-                      <strong>
-                        <a href="" class="dark-grey-text">Asus CT-567</a>
-                      </strong>
-                    </h5>
-                    <span class="badge badge-danger mb-2">bestseller</span>
-                    <!-- Rating -->
-                    <ul class="rating text-left">
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                    </ul>
-                    <!-- Card footer -->
-                    <div class="card-footer pb-0">
-                      <div class="row mb-0">
-                        <span class="float-left">
-                          <strong>1439$</strong>
-                        </span>
-                        <span class="float-right">
-                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                            <i class="fas fa-shopping-cart ml-3"></i>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-              <!-- Grid column -->
-              <!-- Grid column -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                <!-- Card -->
-                <div class="card card-ecommerce">
-                  <!-- Card image -->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" class="img-fluid"
-                      alt="">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card image -->
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Category & Title -->
-                    <h5 class="card-title mb-1">
-                      <strong>
-                        <a href="" class="dark-grey-text">Headphones</a>
-                      </strong>
-                    </h5>
-                    <span class="badge badge-danger mb-2">bestseller</span>
-                    <!-- Rating -->
-                    <ul class="rating text-left">
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                    </ul>
-                    <!-- Card footer -->
-                    <div class="card-footer pb-0">
-                      <div class="row mb-0">
-                        <span class="float-left">
-                          <strong>1439$</strong>
-                        </span>
-                        <span class="float-right">
-                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                            <i class="fas fa-shopping-cart ml-3"></i>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-              <!-- Grid column -->
-              <!-- Grid column -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                <!-- Card -->
-                <div class="card card-ecommerce">
-                  <!-- Card image -->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" class="img-fluid"
-                      alt="">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card image -->
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Category & Title -->
-                    <h5 class="card-title mb-1">
-                      <strong>
-                        <a href="" class="dark-grey-text">iPad PRO</a>
-                      </strong>
-                    </h5>
-                    <span class="badge badge-danger mb-2">bestseller</span>
-                    <span class="badge badge-success mb-2 ml-2">SALE</span>
-                    <!-- Rating -->
-                    <ul class="rating text-left">
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star grey-text"></i>
-                      </li>
-                    </ul>
-                    <!-- Card footer -->
-                    <div class="card-footer pb-0">
-                      <div class="row mb-0">
-                        <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
-                          <span class="red-text">
-                            <strong>$699</strong>
-                          </span>
-                          <span class="grey-text">
-                            <small>
-                              <s>$920</s>
-                            </small>
-                          </span>
-                        </h5>
-                        <span class="float-right">
-                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                            <i class="fas fa-shopping-cart ml-3"></i>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-              <!-- Grid column -->
-              <!-- Grid column -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                <!-- Card -->
-                <div class="card card-ecommerce">
-                  <!-- Card image -->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" class="img-fluid"
-                      alt="">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card image -->
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Category & Title -->
-                    <h5 class="card-title mb-1">
-                      <strong>
-                        <a href="" class="dark-grey-text">Dell V-964i</a>
-                      </strong>
-                    </h5>
-                    <span class="badge badge-danger mb-2">bestseller</span>
-                    <!-- Rating -->
-                    <ul class="rating text-left">
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star blue-text"></i>
-                      </li>
-                    </ul>
-                    <!-- Card footer -->
-                    <div class="card-footer pb-0">
-                      <div class="row mb-0">
-                        <span class="float-left">
-                          <strong>1439$</strong>
-                        </span>
-                        <span class="float-right">
-                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                            <i class="fas fa-shopping-cart ml-3"></i>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </div>
-        <!-- Grid row -->
-    
-      </section>
-      <!-- Section: Block Content -->
-    
-    </div>
+<!-- Section: Block Content -->
+<section>
 
+  <h3 class="font-weight-bold text-center dark-grey-text mb-5">Vêtements Femmes</h3>
+
+  <!-- Grid row -->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Card -->
+      <div class="card card-ecommerce">
+        <!-- Card image -->
+        <div class="view overlay">
+          <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
+            alt=""></a>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!-- Card image -->
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Category & Title -->
+          <h5 class="card-title mb-1">
+            <strong>
+              <a href="produit.php" class="dark-grey-text">Article</a>
+            </strong>
+          </h5>
+          <span class="badge badge-danger mb-2">bestseller</span>
+          <!-- Rating -->
+          <ul class="rating">
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+          </ul>
+          <!-- Card footer -->
+          <div class="card-footer pb-0">
+            <div class="row mb-0">
+              <span class="float-left">
+                <strong>€</strong>
+              </span>
+              <span class="float-right">
+                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                  
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Card -->
+      <div class="card card-ecommerce">
+        <!-- Card image -->
+        <div class="view overlay">
+          <img src="img/articlevide.jpg" class="img-fluid"
+            alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!-- Card image -->
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Category & Title -->
+          <h5 class="card-title mb-1">
+            <strong>
+              <a href="produit.php" class="dark-grey-text">Article</a>
+            </strong>
+          </h5>
+          <span class="badge badge-danger mb-2">bestseller</span>
+          <!-- Rating -->
+          <ul class="rating">
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+          </ul>
+          <!-- Card footer -->
+          <div class="card-footer pb-0">
+            <div class="row mb-0">
+              <span class="float-left">
+                <strong>€</strong>
+              </span>
+              <span class="float-right">
+                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                  <i class="fas fa-shopping-cart ml-3"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Card -->
+      <div class="card card-ecommerce">
+        <!-- Card image -->
+        <div class="view overlay">
+        <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
+            alt=""></a>
+          <a>
+            
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!-- Card image -->
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Category & Title -->
+          <h5 class="card-title mb-1">
+            <strong>
+              <a href="produit.php" class="dark-grey-text">Article</a>
+            </strong>
+          </h5>
+          <span class="badge badge-danger mb-2">bestseller</span>
+          <!-- Rating -->
+          <ul class="rating">
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+          </ul>
+          <!-- Card footer -->
+          <div class="card-footer pb-0">
+            <div class="row mb-0">
+              <span class="float-left">
+                <strong>€</strong>
+              </span>
+              <span class="float-right">
+                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                  <i class="fas fa-shopping-cart ml-3"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Card -->
+      <div class="card card-ecommerce">
+        <!-- Card image -->
+        <div class="view overlay">
+        <a href="produit.php"> <img src="img/articlevide.jpg" class="img-fluid"
+            alt=""></a>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!-- Card image -->
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Category & Title -->
+          <h5 class="card-title mb-1">
+            <strong>
+              <a href="produit.php" class="dark-grey-text">Article</a>
+            </strong>
+          </h5>
+          <span class="badge badge-danger mb-2">bestseller</span>
+          <span class="badge badge-success mb-2 ml-2">SALE</span>
+          <!-- Rating -->
+          <ul class="rating">
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star blue-text"></i>
+            </li>
+            <li>
+              <i class="fas fa-star grey-text"></i>
+            </li>
+          </ul>
+          <!-- Card footer -->
+          <div class="card-footer pb-0">
+            <div class="row mb-0">
+              <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
+                <span class="red-text">
+                  <strong>€</strong>
+                </span>
+                <span class="grey-text">
+                  <small>
+                    <s>€</s>
+                  </small>
+                </span>
+              </h5>
+              <span class="float-right">
+                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                  <i class="fas fa-shopping-cart ml-3"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+
+  <!-- Grid row -->
+  <div class="row flex-center">
+    <p>
+      <a class="btn btn-primary btn-rounded mb-5" data-toggle="collapse" href="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Voir tout
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <!-- Card -->
+          <div class="card card-ecommerce">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img src="img/articlevide.jpg" class="img-fluid"
+                alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Category & Title -->
+              <h5 class="card-title mb-1">
+                <strong>
+                  <a href="" class="dark-grey-text">Article</a>
+                </strong>
+              </h5>
+              <span class="badge badge-danger mb-2">bestseller</span>
+              <!-- Rating -->
+              <ul class="rating text-left">
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+              </ul>
+              <!-- Card footer -->
+              <div class="card-footer pb-0">
+                <div class="row mb-0">
+                  <span class="float-left">
+                    <strong>€</strong>
+                  </span>
+                  <span class="float-right">
+                    <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                      <i class="fas fa-shopping-cart ml-3"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <!-- Card -->
+          <div class="card card-ecommerce">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img src="img/articlevide.jpg" class="img-fluid"
+                alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Category & Title -->
+              <h5 class="card-title mb-1">
+                <strong>
+                  <a href="" class="dark-grey-text">Article</a>
+                </strong>
+              </h5>
+              <span class="badge badge-danger mb-2">bestseller</span>
+              <!-- Rating -->
+              <ul class="rating text-left">
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+              </ul>
+              <!-- Card footer -->
+              <div class="card-footer pb-0">
+                <div class="row mb-0">
+                  <span class="float-left">
+                    <strong>€</strong>
+                  </span>
+                  <span class="float-right">
+                    <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                      <i class="fas fa-shopping-cart ml-3"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <!-- Card -->
+          <div class="card card-ecommerce">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img src="img/articlevide.jpg" class="img-fluid"
+                alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Category & Title -->
+              <h5 class="card-title mb-1">
+                <strong>
+                  <a href="" class="dark-grey-text">Article</a>
+                </strong>
+              </h5>
+              <span class="badge badge-danger mb-2">bestseller</span>
+              <span class="badge badge-success mb-2 ml-2">SALE</span>
+              <!-- Rating -->
+              <ul class="rating text-left">
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star grey-text"></i>
+                </li>
+              </ul>
+              <!-- Card footer -->
+              <div class="card-footer pb-0">
+                <div class="row mb-0">
+                  <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
+                    <span class="red-text">
+                      <strong>€</strong>
+                    </span>
+                    <span class="grey-text">
+                      <small>
+                        <s>€</s>
+                      </small>
+                    </span>
+                  </h5>
+                  <span class="float-right">
+                    <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                      <i class="fas fa-shopping-cart ml-3"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <!-- Card -->
+          <div class="card card-ecommerce">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img src="img/articlevide.jpg" class="img-fluid"
+                alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Category & Title -->
+              <h5 class="card-title mb-1">
+                <strong>
+                  <a href="" class="dark-grey-text"> Article</a>
+                </strong>
+              </h5>
+              <span class="badge badge-danger mb-2">bestseller</span>
+              <!-- Rating -->
+              <ul class="rating text-left">
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star blue-text"></i>
+                </li>
+              </ul>
+              <!-- Card footer -->
+              <div class="card-footer pb-0">
+                <div class="row mb-0">
+                  <span class="float-left">
+                    <strong>€</strong>
+                  </span>
+                  <span class="float-right">
+                    <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                      <i class="fas fa-shopping-cart ml-3"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Block Content -->
+
+</div>
+
+
+   
+
+
+
+
+
+
+
+    
 
     <!--Vêtement Enfants-->
 
@@ -1082,7 +1079,7 @@
       <!-- Section: Block Content -->
       <section>
     
-        <h3 class="font-weight-bold text-center dark-grey-text mb-5">Vêtements Enfants</h3>
+        <h3 class="font-weight-bold text-center dark-grey-text mb-5">Vêtements Enfant</h3>
     
         <!-- Grid row -->
         <div class="row">
@@ -1092,8 +1089,8 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid"
-                  alt="">
+                <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
+                  alt=""></a>
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -1104,7 +1101,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="" class="dark-grey-text">iPhone 5</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -1130,11 +1127,11 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>799$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                        <i class="fas fa-shopping-cart ml-3"></i>
+                        
                       </a>
                     </span>
                   </div>
@@ -1151,7 +1148,7 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
+                <img src="img/articlevide.jpg" class="img-fluid"
                   alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -1163,7 +1160,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="" class="dark-grey-text">Sony TV-675i</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -1189,7 +1186,7 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>1039$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -1210,9 +1207,10 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
-                  alt="">
+              <a href="produit.php"><img src="img/articlevide.jpg" class="img-fluid"
+                  alt=""></a>
                 <a>
+                  
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
@@ -1222,7 +1220,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="" class="dark-grey-text">iPhone</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -1248,7 +1246,7 @@
                 <div class="card-footer pb-0">
                   <div class="row mb-0">
                     <span class="float-left">
-                      <strong>2599$</strong>
+                      <strong>€</strong>
                     </span>
                     <span class="float-right">
                       <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -1269,8 +1267,8 @@
             <div class="card card-ecommerce">
               <!-- Card image -->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" class="img-fluid"
-                  alt="">
+              <a href="produit.php"> <img src="img/articlevide.jpg" class="img-fluid"
+                  alt=""></a>
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -1281,7 +1279,7 @@
                 <!-- Category & Title -->
                 <h5 class="card-title mb-1">
                   <strong>
-                    <a href="" class="dark-grey-text">iPad Pro</a>
+                    <a href="produit.php" class="dark-grey-text">Article</a>
                   </strong>
                 </h5>
                 <span class="badge badge-danger mb-2">bestseller</span>
@@ -1309,11 +1307,11 @@
                   <div class="row mb-0">
                     <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
                       <span class="red-text">
-                        <strong>$99</strong>
+                        <strong>€</strong>
                       </span>
                       <span class="grey-text">
                         <small>
-                          <s>$120</s>
+                          <s>€</s>
                         </small>
                       </span>
                     </h5>
@@ -1350,7 +1348,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -1362,7 +1360,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Asus CT-567</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -1388,7 +1386,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -1409,7 +1407,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -1421,7 +1419,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Headphones</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -1447,7 +1445,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -1468,7 +1466,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -1480,7 +1478,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">iPad PRO</a>
+                        <a href="" class="dark-grey-text">Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -1508,11 +1506,11 @@
                       <div class="row mb-0">
                         <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
                           <span class="red-text">
-                            <strong>$699</strong>
+                            <strong>€</strong>
                           </span>
                           <span class="grey-text">
                             <small>
-                              <s>$920</s>
+                              <s>€</s>
                             </small>
                           </span>
                         </h5>
@@ -1535,7 +1533,7 @@
                 <div class="card card-ecommerce">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" class="img-fluid"
+                    <img src="img/articlevide.jpg" class="img-fluid"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -1547,7 +1545,7 @@
                     <!-- Category & Title -->
                     <h5 class="card-title mb-1">
                       <strong>
-                        <a href="" class="dark-grey-text">Dell V-964i</a>
+                        <a href="" class="dark-grey-text"> Article</a>
                       </strong>
                     </h5>
                     <span class="badge badge-danger mb-2">bestseller</span>
@@ -1573,7 +1571,7 @@
                     <div class="card-footer pb-0">
                       <div class="row mb-0">
                         <span class="float-left">
-                          <strong>1439$</strong>
+                          <strong>€</strong>
                         </span>
                         <span class="float-right">
                           <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
@@ -1598,9 +1596,21 @@
       <!-- Section: Block Content -->
     
     </div>
+    
+
      
       
       
+
+
+
+
+
+
+
+
+
+
      <!--shopping par catégorie-->
 
   <div class="container mt-5">
@@ -1623,8 +1633,7 @@
           <div class="card collection-card z-depth-1-half">
             <!-- Card image -->
             <div class="view zoom">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/5.jpg" class="img-fluid"
-                alt="">
+              <a href="article.php">  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/5.jpg" class="img-fluid" alt=""></a>
               <div class="stripe dark">
                 <a>
                   <p>Trousers
@@ -1645,8 +1654,7 @@
           <div class="card collection-card z-depth-1-half">
             <!-- Card image -->
             <div class="view zoom">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg" class="img-fluid"
-                alt="">
+            <a href="article.php"> <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg" class="img-fluid" alt=""></a>
               <div class="stripe light">
                 <a>
                   <p>Sweatshirt
@@ -1667,8 +1675,7 @@
           <div class="card collection-card z-depth-1-half">
             <!-- Card image -->
             <div class="view zoom">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/9.jpg" class="img-fluid"
-                alt="">
+            <a href="article.php"> <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/9.jpg" class="img-fluid" alt=""></a>
               <div class="stripe dark">
                 <a>
                   <p>Black hat
@@ -1689,8 +1696,7 @@
           <div class="card collection-card z-depth-1-half">
             <!-- Card image -->
             <div class="view zoom">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg" class="img-fluid"
-                alt="">
+            <a href="article.php"> <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg" class="img-fluid" alt=""></a>
               <div class="stripe light">
                 <a>
                   <p>Sweatshirt
@@ -1721,6 +1727,4 @@
                                                                                       ?> 
 
 
-  </body>
-
-</html>
+  

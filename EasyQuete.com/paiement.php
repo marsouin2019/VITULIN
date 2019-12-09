@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mdb.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/index.css">
-
-<title>EasyQuete</title>
-  </head>
-  <body>
     
 
                                                                              <!--header-->
@@ -313,7 +298,7 @@
                           </div>
                           <hr class="mb-4">
           
-                          <button class="btn btn-primary btn-lg btn-block" type="submit">Passer la commande</button>
+                          
           
                         </div>
                         <!--/.Panel 3-->
@@ -328,7 +313,54 @@
                     <!--Grid column-->
                     <div class="col-lg-4 mb-4">
           
-                      <button class="btn btn-primary btn-lg btn-block" type="submit">Passer la commande</button>
+                      <!-- Boutton paiement-->
+<div class="modal fade right" id="ModalDanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="t`rue">
+  <div class="modal-dialog modal-notify modal-danger modal-side modal-top-right" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading">Votre réservation à bien été prise en compte</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-3">
+            <p></p>
+            <p class="text-center"><i class="fas fa-shopping-cart fa-4x"></i></p>
+          </div>
+
+          <div class="col-9">
+            <p>Votre numéro de commande.</p>
+            <h2><span class="badge">v52gs1</span></h2>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a href="index.php" type="button" class="btn btn-danger">Boutique <i class="far fa-gem ml-1 white-text"></i></a>
+       
+        <a href="total_reservation.php" type="button" class="btn btn-outline-danger waves-effect">Vos réservations <i class="far fa-gem ml-1 white-text"></i></a>
+        
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Boutton paiement-->
+
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#ModalDanger">Paiement</a>
+</div>
+
           
                       <!--Card-->
                       <div class="card z-depth-0 border border-light rounded-0">
@@ -341,7 +373,7 @@
           
                           <dl class="row">
                             <dd class="col-sm-8">
-                              MDBootstrap UI KIT (jQuery version) - License 6-10 poeple + unlimited projects
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                             </dd>
                             <dd class="col-sm-4">
                               $ 2000
@@ -403,6 +435,19 @@
           </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+          
+
                                                                       <!--Footer-->
 
                                                                           <?php
@@ -412,9 +457,6 @@
 
     
  
-  </body>
-</html>
-
 
 
 

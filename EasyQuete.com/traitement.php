@@ -28,6 +28,7 @@ foreach($_POST as $key => $value)
 //echo $key correspond à $value
 
 */
+session_start();
 include("class/connect.php");
 include("class/add_client.class.php");
 
@@ -45,6 +46,10 @@ switch($_POST["frmForm"]){
     case "frmLogin":
         // appel methode login
         $addUser->login($_POST);
+    break;
+    case "frmReset":
+        // appel methode login
+        $addUser->resetPassword($_POST());
     break;
     default :
         // accueil

@@ -1,20 +1,5 @@
-<doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/mdb.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/article.css">
 
-<title>EasyQuete</title>
-  </head>
-<body>
     
                                                                          <!--header-->
                                                                               <?php
@@ -46,7 +31,7 @@
 
           <!-- Filter panel -->
           <div class="mb-5">
-            <h5 class="font-weight-bold mb-3">Order by</h5>
+            <h5 class="font-weight-bold mb-3">Ordre</h5>
 
             <div class="divider-small mb-3"></div>
 
@@ -73,31 +58,34 @@
           <!-- Filter panel -->
           <div class="mb-5">
 
-            <h5 class="font-weight-bold mb-3">Categorie</h5>
+            <h5 class="font-weight-bold mb-3">Catégorie</h5>
 
             <div class="divider-small mb-3"></div>
 
             <div class="form-check pl-0 mb-2">
               <input type="radio" class="form-check-input" id="materialGroupExample1" name="groupOfMaterialRadios">
-              <label class="form-check-label" for="materialGroupExample1">All</label>
+              <label class="form-check-label" for="materialGroupExample1">Tout</label>
             </div>
 
             <div class="form-check pl-0 mb-2">
               <input type="radio" class="form-check-input" id="materialGroupExample2" name="groupOfMaterialRadios"
                 checked>
-              <label class="form-check-label" for="materialGroupExample2">Laptops</label>
+              <label class="form-check-label" for="materialGroupExample2">Marques</label>
             </div>
 
             <div class="form-check pl-0 mb-2">
               <input type="radio" class="form-check-input" id="materialGroupExample3" name="groupOfMaterialRadios">
-              <label class="form-check-label" for="materialGroupExample3">Smartphones</label>
+              <label class="form-check-label" for="materialGroupExample3">Vêtements</label>
             </div>
 
             <div class="form-check pl-0 mb-2">
               <input type="radio" class="form-check-input" id="materialGroupExample4" name="groupOfMaterialRadios">
-              <label class="form-check-label" for="materialGroupExample4">Tablets</label>
+              <label class="form-check-label" for="materialGroupExample4">Chaussures</label>
             </div>
-
+            <div class="form-check pl-0 mb-2">
+              <input type="radio" class="form-check-input" id="materialGroupExample4" name="groupOfMaterialRadios">
+              <label class="form-check-label" for="materialGroupExample4">Accesoires</label>
+            </div>
           </div>
           <!-- Filter panel -->
 
@@ -116,13 +104,13 @@
 
               <!-- Grid column -->
               <div class="col-md-6 text-left">
-                <p class="dark-grey-text"><strong id="resellerEarnings">0$</strong></p>
+                <p class="dark-grey-text"><strong id="resellerEarnings">0€</strong></p>
               </div>
               <!-- Grid column -->
 
               <!-- Grid column -->
               <div class="col-md-6 text-right">
-                <p class="dark-grey-text"><strong id="clientPrice">500$</strong></p>
+                <p class="dark-grey-text"><strong id="clientPrice">500€</strong></p>
               </div>
               <!-- Grid column -->
             </div>
@@ -143,7 +131,7 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
-              <a href="" class="ml-2 active">4 and more</a>
+              <a href="" class="ml-2 active">4 et plus</a>
             </div>
 
             <div class="amber-text fa-sm mb-1">
@@ -161,7 +149,7 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
-              <a href="" class="ml-2">3.00 and less</a>
+              <a href="" class="ml-2">3.00 et moins</a>
             </div>
 
           </div>
@@ -192,15 +180,15 @@
         <div class="col-lg-3 col-md-6 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Sony TV-675</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
 
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
 
         </div>
         <!--Grid column-->
@@ -209,15 +197,15 @@
         <div class="col-lg-3 col-md-6 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Samsung CT-567</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
 
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
 
         </div>
         <!--Grid column-->
@@ -226,15 +214,84 @@
         <div class="col-lg-3 col-md-6 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Dell V-964i</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
 
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+    <div class="container my-5 py-5">
+
+
+    <!--Section: Content-->
+    <section class="text-center">
+
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4">
+
+          <a href="" class="waves-effect waves-light"><img
+              src="img/articlevide.jpg" class="img-fluid"
+              alt=""></a>
+
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
+
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
+
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <a href="" class="waves-effect waves-light"><img
+              src="img/articlevide.jpg" class="img-fluid"
+              alt=""></a>
+
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
+
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
+
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <a href="" class="waves-effect waves-light"><img
+              src="img/articlevide.jpg" class="img-fluid"
+              alt=""></a>
+
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
+
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
+
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
 
         </div>
         <!--Grid column-->
@@ -262,15 +319,14 @@
         <div class="col-lg-3 col-md-12 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Sony TV-675</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
 
         </div>
         <!--Grid column-->
@@ -279,16 +335,14 @@
         <div class="col-lg-3 col-md-6 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Samsung CT-567</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
-
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
         </div>
         <!--Grid column-->
 
@@ -296,86 +350,16 @@
         <div class="col-lg-3 col-md-6 mb-4">
 
           <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid"
+              src="img/articlevide.jpg" class="img-fluid"
               alt=""></a>
 
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Dell V-964i</a></p>
+          <p class="mb-1"><a href="" class="font-weight-bold black-text">Article</a></p>
 
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
+          <p class="mb-1"><small class="mr-1"><s>00€</s></small><strong>00€</strong></p>
 
 
-    </section>
-    <!--Section: Content-->
-
-
-  </div>
-    <div class="container my-5 py-5">
-
-
-    <!--Section: Content-->
-    <section class="text-center">
-
-
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-12 mb-4">
-
-          <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid"
-              alt=""></a>
-
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Sony TV-675</a></p>
-
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid"
-              alt=""></a>
-
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Samsung CT-567</a></p>
-
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <a href="" class="waves-effect waves-light"><img
-              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid"
-              alt=""></a>
-
-          <p class="mb-1"><a href="" class="font-weight-bold black-text">Dell V-964i</a></p>
-
-          <p class="mb-1"><small class="mr-1"><s>$599</s></small><strong>$299</strong></p>
-
-
-          <button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Buy Now</button>
-          <button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button>
+          <a href="panier.php"><button type="button" class="btn btn-indigo btn-rounded btn-sm px-3">Panier</button></a>
+          <a href="produit.php"><button type="button" class="btn btn-outline-indigo btn-rounded btn-sm px-3 waves-effect">Details</button></a>
 
         </div>
         <!--Grid column-->

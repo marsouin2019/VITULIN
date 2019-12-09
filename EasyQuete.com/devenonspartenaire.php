@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- CSS -->
- <link rel="stylesheet" href="css/bootstrap.css">   
-<link rel="stylesheet" href="css/mdb.css">
-
-<link rel="stylesheet" href="css/index.css">
-<title>EasyQuete</title>
-  </head>
-  <body>
-    
+  
                                                                            <!--header-->
                                                                                 <?php
                                                                     include("includes/header.php")
@@ -211,7 +196,7 @@
 
 
 
-      <a href="index.php"><button ><button type="button" class="btn btn-danger btn-rounded">Retour à la boutique</button></button></a>
+      
 
                                                                            <!--Footer-->
 
@@ -221,12 +206,7 @@
         
 
 
-  </body>
-</html>
-
-
-
-
+ 
 
 
 

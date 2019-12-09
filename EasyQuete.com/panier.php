@@ -1,17 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mdb.css">
-<link rel="stylesheet" href="css/index.css">
-<title>EasyQuete</title>
-  </head>
-  <body>
     
                                                                            <!--header-->
                                                                            <?php
@@ -64,22 +51,22 @@
               <!-- First row -->
               <tr>
                 <th scope="row">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" alt="" class="img-fluid z-depth-0">
+                  <img src="img/articlevide.jpg" alt="" class="img-fluid z-depth-0">
                 </th>
                 <td>
                   <h5 class="mt-3">
-                    <strong>iPhone</strong>
+                    <strong>Article</strong>
                   </h5>
-                  <p class="text-muted">Apple</p>
+                  <p class="text-muted">Marque</p>
                 </td>
                 <td>White</td>
                 <td></td>
-                <td>$800</td>
+                <td>€</td>
                 <td>
                   <input type="number" value="2" aria-label="Search" class="form-control" style="width: 100px">
                 </td>
                 <td class="font-weight-bold">
-                  <strong>$800</strong>
+                  <strong>€</strong>
                 </td>
                 <td>
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
@@ -92,22 +79,22 @@
               <!-- Second row -->
               <tr>
                 <th scope="row">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" alt="" class="img-fluid z-depth-0">
+                  <img src="img/articlevide.jpg" alt="" class="img-fluid z-depth-0">
                 </th>
                 <td>
                   <h5 class="mt-3">
-                    <strong>Headphones</strong>
+                    <strong>Article</strong>
                   </h5>
-                  <p class="text-muted">Sony</p>
+                  <p class="text-muted">Marque</p>
                 </td>
                 <td>Red</td>
                 <td></td>
-                <td>$200</td>
+                <td>€</td>
                 <td>
                   <input type="number" value="2" aria-label="Search" class="form-control" style="width: 100px">
                 </td>
                 <td class="font-weight-bold">
-                  <strong>$600</strong>
+                  <strong>€</strong>
                 </td>
                 <td>
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
@@ -120,22 +107,22 @@
               <!-- Third row -->
               <tr>
                 <th scope="row">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" alt="" class="img-fluid z-depth-0">
+                  <img src="img/articlevide.jpg" alt="" class="img-fluid z-depth-0">
                 </th>
                 <td>
                   <h5 class="mt-3">
-                    <strong>iPad Pro</strong>
+                    <strong>Article</strong>
                   </h5>
-                  <p class="text-muted">Apple</p>
+                  <p class="text-muted">Marque</p>
                 </td>
                 <td>Gold</td>
                 <td></td>
-                <td>$600</td>
+                <td>€</td>
                 <td>
                   <input type="number" value="2" aria-label="Search" class="form-control" style="width: 100px">
                 </td>
                 <td class="font-weight-bold">
-                  <strong>$1200</strong>
+                  <strong>€</strong>
                 </td>
                 <td>
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
@@ -159,7 +146,7 @@
                   </h4>
                 </td>
                 <td colspan="3" class="text-right">
-                 <a href="total_reservation.php"> <button type="button" class="btn btn-primary btn-rounded">Terminer Votre Réservation</button> </a>
+                 <a href="paiement.php"> <button type="button" class="btn btn-primary btn-rounded">Terminer Votre Réservation</button> </a>
                     
                   
                 </td>
@@ -185,15 +172,6 @@
                                                                                  <?php
                                                                    include("includes/footer.php")
                                                                                   ?> 
-
-
-
-</body>
-</html>
-
-
-
-
 
 
 
