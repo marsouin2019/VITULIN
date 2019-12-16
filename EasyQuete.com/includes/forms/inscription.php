@@ -13,11 +13,11 @@
     <div class="form-row mb-4">
         <div class="col">
             <!-- First name -->
-            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Nom...">
+            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Nom..." required>
         </div>
         <div class="col">
             <!-- Last name -->
-            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom...">
+            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom..." required>
         </div>
     </div>
 
@@ -26,12 +26,12 @@
     <input type="text" id="username" name="username" class="form-control mb-4" placeholder="Pseudo">
 
     <!-- Password -->
-    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
     <small id="" class="form-text text-muted mb-4">
         Au moins 8 caractères
     </small>
      <!-- E-mail -->
-     <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail">
+     <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail" required>
 
     
 
@@ -49,7 +49,7 @@
      <input type="text" id="adressc" name="adressc" class="form-control mb-4" placeholder="Adresse complémentaire">
 
      <!--telephone-->
-     <input type="phone" id="telephone" name="telephone" class="form-control mb-4" placeholder="Numéro de téléphone">
+     <input type="phone" id="telephone" name="telephone" class="form-control mb-4" placeholder="Numéro de téléphone" required>
      
 
      <!-- Ville -->
@@ -58,8 +58,8 @@
     <div class="form-group">
 		    <label>Pays</label><br>
 		    <select name="pays" id="pays" class="form-control" required>
-		            <option value="Martinique">Martinique</option>
-		            <option value="Guadeloupe">Guadeloupe</option>
+		            <option value="1">Martinique</option>
+		            <option value="2">Guadeloupe</option>
 		    </select>
 	</div>
 

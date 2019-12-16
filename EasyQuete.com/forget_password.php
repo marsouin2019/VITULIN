@@ -56,7 +56,7 @@
            
 
            
-            <button class="btn btn-info my-4 btn-block" name="frmReset" value="frmForm" type="submit">Changer de mot de passe</button>
+            <button class="btn btn-info my-4 btn-block" name="frmForm" value="frmReset" type="submit">Changer de mot de passe</button>
 
             
             

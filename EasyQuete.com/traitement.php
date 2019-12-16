@@ -47,11 +47,16 @@ switch($_POST["frmForm"]){
         // appel methode login
         $addUser->login($_POST);
     break;
-    case "frmReset":
-        // appel methode login
-        $addUser->resetPassword($_POST());
+    case "frmUpdate":
+        // appel methode update
+        $addUser->update_user($_POST);
     break;
+    /*case "frmDelete":
+        // appel methode update
+        $addUser->delete_user($_POST);
+    break;*/
     default :
+    
         // accueil
         // header('Location: http://localhost/eval-e2.com/login.php', replace);
 

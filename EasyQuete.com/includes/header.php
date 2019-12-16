@@ -31,44 +31,53 @@
 								<li><a class="dropdown-item" href="#">EUR</a></li>
 								<li><a class="dropdown-item" href="#">USD</a></li>
 								<li><a class="dropdown-item" href="#">RUBL </a></li>
-				            </ul>
+				      </ul>
 						</li>
 				        
 				        <li class="nav-item"><a href="faq.php" class="nav-link">FAQ</a></li>
-				        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="img/nom-50.png" alt="" srcset="" width="30px" >   Mon Compte</a>
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="img/nom-50.png" alt="" srcset="" width="30px" >   Mon Compte</a>
+                
 				            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-108px, 42px, 0px);">
-                  <?php
+                    <?php
 
-                      if(isset($_SESSION["prenom"]) != "")
-                      {
-                          echo "<p>Bienvenue ".$_SESSION["prenom"]." </p>";
-                      } else {
+                        if(isset($_SESSION["prenom"]) != "")
+                        {   
+                           
+                            echo "<ul>";
+                            echo "<li>";
+                            echo "<p>Bienvenue ".$_SESSION["prenom"]." </p>";
+                            echo "<a href='profil.php'>Page profil</a>";
+                            echo "</li>";
+                            echo "<a href='logout.php'><button type='submit' class='btn btn-primary' action=''>Se déconnecter</button></a>";
+                            echo "</ul>";
 
-                     
-                    ?>
+                        } else {
+
+                      
+                      ?>
                     <form class="px-4 py-3" method="POST" action="traitement.php" name="frmRegister">
-										<div class="form-group">
-										  <label>Adresse mail</label>
-										  <input type="email" class="form-control" placeholder="email@example.com" name="email">
-										</div>
-										<div class="form-group">
-										  <label>Mot de passe</label>
-										  <input type="password" class="form-control" placeholder="Password" name="password">
-										</div>
-                    <button type="submit" class="btn btn-primary" name="frmForm" value="frmLogin">Se connecter</button>
-										<
-                    
+                      <div class="form-group">
+                        <label>Adresse mail</label>
+                        <input type="email" class="form-control" placeholder="email@example.com" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label>Mot de passe</label>
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                      </div>
+                      <button type="submit" class="btn btn-primary" name="frmForm" value="frmLogin">Se connecter</button>
+                      
 										</form>
 										<hr class="dropdown-divider">
 										<a class="dropdown-item" href="inscription.php">Pas encore inscrit ? Cliquez ici !</a>
                     <a class="dropdown-item" href="forget_password.php">Mot de passe oublié ?</a>
-                    <?php
-                     }
-                     ?>
-                     
+                      <?php
+                          }
+                      ?>
+                      
 								</div> <!--  dropdown-menu .// -->
                 </li>
-                <a href="logout.php"><button type="submit" class="btn btn-primary" action="">Se déconnecter</button></a> 
+                	
+                
 
   <form class="form-inline my-1">
     <div class="md-form form-sm my-0">

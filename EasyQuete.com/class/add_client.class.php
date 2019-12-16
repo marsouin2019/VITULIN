@@ -47,22 +47,8 @@ class Personne
         
         $this->prenom = ltrim(htmlentities(ucfirst($data["firstname"])));
        
-        $this->username = ltrim(htmlentities(strtoupper($data["username"])));
-        $this->adress = ltrim(htmlentities($data["adress"]));
-       
-        $this->adressc = ltrim(htmlentities($data["adressc"]));
-      
-        
-        if(!preg_match("/[0-9]{5}/", $data["codepostal"])){
-            echo "false";
-        }
-        
-        $this->ville = ltrim(htmlentities(ucfirst($data["ville"])));
-       
-        $this->pays = ltrim(htmlentities($data["pays"]));  // chaine de caracteres
-       
-        $this->email = strtolower($data["email"]);
-        
+        $this->username = ltrim(htmlentities(ucfirst($data["username"])));
+
         if(strlen($data["password"]) < 8)
         {
             echo"false";
@@ -70,11 +56,26 @@ class Personne
 
             $this->password = password_hash($data["password"],PASSWORD_DEFAULT);
         }
-        
-        if(!preg_match("#(^\+[0-9]{3}|^\+[0-9]{2}\(0\)|^\(\+[0-9]{2}\)\(0\)|^00[0-9]{2}|^0)([0-9]{9}$|[0-9\-\s]{10}$)#", $data["telephone"])){
 
-            echo "false";
-        }
+        $this->email = strtolower($data["email"]);
+        
+
+        $this->adress = ltrim(htmlentities($data["adress"]));
+
+        $this->codepostal = ltrim(htmlentities($data["codepostal"]));
+       
+        $this->adressc = ltrim(htmlentities($data["adressc"]));
+
+        $this->telephone = ltrim(htmlentities($data["telephone"]));
+        
+        $this->ville = ltrim(htmlentities(ucfirst($data["ville"])));
+       
+        $this->pays = ltrim(htmlentities($data["pays"]));  // chaine de caracteres
+       
+       
+        
+        
+        
 
         // recuperer idpays
         $req = $this->connectDB->query("SELECT idpays FROM pays WHERE libelle = '".$this->pays."'");
@@ -88,8 +89,8 @@ class Personne
         // table logins
 
         // requete insert data
-        $resultat = $this->connectDB->query("INSERT INTO clients(civilite, nom, prenom, adress, adressc, ville, idpays) 
-        VALUES ('".$this->civilite."', '".$this->nom."', '".$this->prenom."', '".$this->adress."', '".$this->adressc."', '".$this->ville."', '".$idpays."')");
+        $resultat = $this->connectDB->query("INSERT INTO clients(civilite, nom, prenom, adress, codepostal, adressc, telephone , ville, idpays) 
+        VALUES ('".$this->civilite."', '".$this->nom."', '".$this->prenom."', '".$this->adress."', '".$this->codepostal."', '".$this->adressc."','".$this->telephone."', '".$this->ville."', '".$idpays."')");
             
              if($resultat == 1){
                 // requete selection pour récupérer id personne
@@ -98,6 +99,7 @@ class Personne
 
                 // session
                 $_SESSION["prenom"] = $row["prenom"];
+                
 
                 $idclient = $row["idclient"];
 
@@ -119,7 +121,6 @@ class Personne
         /*print_r($data);
         echo "ok";*/
         $this->email = $data["email"];
-        // mise en securite du mot de passe
          // condition test longueur chaine mot de passe
         if( strlen($data["password"]) < 8 )
         {
@@ -127,12 +128,13 @@ class Personne
                 echo "false";
     
         } else {
-            $login = $this->connectDB->query ("SELECT * FROM logins WHERE email = '".$this->email."'");
+
+            $login = $this->connectDB->query("SELECT * FROM logins WHERE email = '".$this->email."'");
             $row = $login->fetch_assoc();
             
             $idPers = $row["idclient"];
            
-            $personne = $this->connectDB->query("SELECT prenom FROM clients WHERE idclient = '".$idPers."'");
+            $personne = $this->connectDB->query("SELECT * FROM clients WHERE idclient = '".$idPers."'");
             $rowP = $personne->fetch_assoc();
             
             
@@ -141,10 +143,20 @@ class Personne
 
             if(password_verify($data["password"], $password))
             {
-                //stocker en session username et email
+                //stocker en session prenom et email
+                $_SESSION["civilite"] = $rowP["civilite"];
+                $_SESSION["nom"] = $rowP["nom"];
                 $_SESSION["prenom"] = $rowP["prenom"];
+                $_SESSION["username"] = $row["username"];
+                //$_SESSION["password"] = $rowP["password"];
                 $_SESSION["email"] = $row["email"];
-
+                $_SESSION["adress"] = $rowP["adress"];
+                $_SESSION["codepostal"] = $rowP["codepostal"];
+                $_SESSION["adressc"] = $rowP["adressc"];
+                $_SESSION["telephone"] = $rowP["telephone"];
+                $_SESSION["ville"] = $rowP["ville"];
+                $_SESSION["idpays"] = $rowP["idpays"];
+          
                 header("Location: http://localhost/EasyQuete.com/index.php", replace);
                 
                
@@ -152,73 +164,143 @@ class Personne
             } else{
                     //redirection vers page form login
                     
-                    header("Location: http://localhost/formconexion.php", replace);
+                    header("Location: http://localhost/EasyQuete.com/formconexion.php", replace);
                    
             };
 
+
         }
     
     }
 
-    public function resetPassword($data){
-        // traitement adresse email
-        $this->email = $data;
-        $resetPassword = $this->connectDB->query("SELECT * FROM logins WHERE email = '".$this->email."'");
-        print_r($resetPassword);
+    public function update_user(array $data){
 
-        //generateur nouveau password
-        echo $newPassword = $this->genePasswd(8);
+        //print_r($data);
+        $this->email = $data["email"];
 
-        // mail
-        echo $this->envoi_password($newPassword);
-        exit;
+        $req = $this->connectDB->query("SELECT * FROM logins WHERE email = '".$this->email."' ");
+        $resultat = $req->fetch_assoc();
 
-        //crypter
-        $this->password = password_hash($newPassword,PASSWORD_DEFAULT);
+        //print_r($resultat);
 
-        // mettre a jour mot de passe dans la table logins
-        $resultat = $this->connectDB->query-("UPDATE logins SET password= '".$this->password."' WHERE email = '".$this->email."'");
+        $idclient= $resultat["idclient"];
+
+        // find client informations
+        $reqC = $this->connectDB->query("SELECT * FROM clients WHERE idclient = '".$idclient."' ");
+        $resultC = $reqC->fetch_assoc();
 
 
-    }
+        
+       
 
-    public function genePasswd(int $length){
-        // test longueur
-        $length = ($length == 8) ? 8 : 12;
-
-        //chaine
-        $chaine = "ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz123456789&#.";
-
-        //melanger
-        $melanger = str_shuffle($chaine);
-
-        //retourner
-        return $passwd = substr($melanger, 0, $length);
-
-
-
-    }
-
-    public function envoi_password($passwd){
-        //
-        $to= 'nicolas.vitulin@gmail.com';
-        $subject= 'New Password localhost';
-        $message= 'Bonjour !, voici votre nouveau mot de passe.'.$passwd.'.'."\r\n";
-        $headers = 'From: hostmaster@gmail.com'."\r\n". 'Reply-To: noreply@gmail.com'."\r\n". 'X-Mailer: PHP/' .phpversion();
-
-        if(mail($to, $subject, $message, $headers)){
-            return "Le message est envoyé";
+        // comparaison et update
+        if($data["civilite"] != $resultC["civilite"])
+        {
+            $this->pays = $data["civilite"];
         } else {
-            return "Le message n'est pas envoyé";
+            $this->pays = $resultC["civilite"];
         }
+
+        if($data["lastname"] != $resultC["nom"])
+        {
+            $this->nom = $data["lastname"];
+             
+        } else {
+            $this->nom = $resultC["nom"];
+        }
+
+        if($data["firstname"] != $resultC["prenom"])
+        {
+            $this->prenom = $data["firstname"];
+        } else {
+
+            $this->prenom = $resultC["prenom"];
+        }
+
+        
+        if($data["username"] != $resultat["username"])
+        {
+            $this->username = $data["username"];
+        } else {
+
+            $this->username = $resultat["username"];
+        }
+        
+        if($data["email"] != $resultat["email"])
+        {
+            $this->email = $data["email"];
+        } else {
+            $this->email = $resultat["email"];
+        }
+
+        if($data["adress"] != $resultC["adress"])
+        {
+            $this->adress = $data["adress"];
+        } else {
+            $this->adress = $resultC["adress"];
+        }
+
+        if($data["codepostal"] != $resultC["codepostal"])
+        {
+            $this->codepostal = $data["codepostal"];
+        } else {
+            $this->codepostal = $resultC["codepostal"];
+        }
+        
+        if($data["adressc"] != $resultC["adressc"])
+        {
+            $this->adressc = $data["adressc"];
+        } else {
+            $this->adressc = $resultC["adressc"];
+        }
+
+        if($data["telephone"] != $resultC["telephone"])
+        {
+            $this->telephone = $data["telephone"];
+        } else {
+
+            $this->telephone = $resultC["telephone"];
+        }
+
+        if($data["ville"] != $resultC["ville"])
+        {
+            $this->ville = $data["ville"];
+        } else {
+            $this->ville = $resultC["ville"];
+        }
+
+        if($data["pays"] != $resultC["idpays"])
+        {
+            $this->pays = $data["pays"];
+        } else {
+            $this->pays = $resultC["idpays"];
+        }
+
+        
+        // requete update
+        $reqU = $this->connectDB->query("UPDATE clients SET nom='".$this->nom."',prenom='".$this->prenom."',adress='".$this->adress."',codepostal='".$this->codepostal."',adressc='".$this->adressc."',telephone='".$this->telephone."',ville='".$this->ville."',idpays='".$this->pays."' WHERE idclient= '".$idclient."'");
+        
+        
+        if($reqU == 1){
+
+            header("Location: http://localhost/EasyQuete.com/index.php", replace);
+        }
+        
+
 
 
 
     }
 
+    /*public function delete_user(array $data){
 
-    
-}
+       $requete = $this->connectDB->query("DELETE FROM clients WHERE idclient = '".$idclient."'");
+
+    }*/
+
+
+    }
+
 
 
 
